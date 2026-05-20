@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.Tarjeta{
+    width: 550px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+}
+.título {
+    display: flex;
+    justify-content: space-between;
+
+}
+.título img {
+    width: 60px;
+    height: 60px;
+    object-fit:unset;
+}
+.Contenido {
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    width: 100%;
+    margin: 5px;
+    padding: 3px;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
+    outline: none;
+}
+.Enviar {
+    display:flex;
+    justify-content: center;
+    border-color:none;
+}
+button {
+    background-color: gray;
+    color: black;
+    padding: 8px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor:pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(178, 174, 174);
+}
