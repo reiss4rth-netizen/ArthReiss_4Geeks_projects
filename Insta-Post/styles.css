@@ -1,0 +1,110 @@
+
+*{
+    user-select:none;
+}
+.page{
+    background-color: grey;
+}
+body {
+    width: 500px;
+    margin: auto;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    background-color: rgb(160, 160, 160);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header {
+    display:flex;
+    align-items: center;
+    background-color:grey; 
+}
+h1 {
+    margin: 2px
+}
+h4 {
+    margin:0px 5px;
+    font-size:20px
+}
+.post {
+    margin: 15% auto;
+    background-color: grey;
+}
+.options{
+    display:flex;
+    align-items:center;
+    padding: 5px 15px;
+    font-size: 22px;
+}
+.Date {
+    display: flex;
+    align-items: center;
+    font-size:12px;
+    color:rgb(176, 174, 174);
+    margin: 0px 15px;
+}
+.header {
+    display:flex;
+    justify-content:center;
+    padding: 2px 5px;
+}
+.postHead {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.postHead img {
+    border-radius: 100px;
+    aspect-ratio: 1/1;
+    width:40px;
+    object-fit:cover;
+    object-position: top;
+    padding: ;
+}
+.user {
+    display:flex;
+    align-items: center;
+    padding:2px
+}
+.postBody{
+    height:100%;
+    background-color:rgb(97, 97, 97);
+}
+.postBody img {
+    background-color:rgb(97, 97, 97);
+    aspect-ratio: 1/1;
+    width:100%;
+    object-fit:cover;
+    object-position: top;
+}
+.interact {
+    margin:5px;
+    display:flex;
+    justify-content:space-between;
+    font-size: 22px;
+}
+
+i {
+    color:black;
+    margin: 0px 5px:
+}
+i[class="fa-regular fa-heart"]:hover,
+i[class="fa-regular fa-comment"]:hover, 
+i[class="fa-solid fa-retweet"]:hover,
+i[class="fa-regular fa-bookmark"]:hover,
+i[class="fa-regular fa-paper-plane"]:hover,
+i[class="fa-solid fa-ellipsis-vertical"]:hover {
+    color: white;
+    cursor:pointer;
+}
+.textSquare {
+    height: 60px;
+}
+#textPost {
+    font-size: 14px;
+    margin:5px 5px 0px 5px;
+}
+#hashtag:hover {
+    text-decoration: underline blue;
+    color:blue
+}
