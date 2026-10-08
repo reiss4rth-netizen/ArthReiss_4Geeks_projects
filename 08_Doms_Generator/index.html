@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de dominios random</title>
+    <link rel="stylesheet" href="/08_Doms_Generator/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="w-100 m-0">
+ <!-- Hola!! Te recomiendo usar la funcion de sugerir ideas unas cuantas veces, a lo mejor
+ te ries un poco... hice cinco respuestas posibles. -->
+    <!-- Página 1 -->
+    <div id="page_1" class="">
+        <div class="row m-4 d-flex justify-content-center">
+            <div class="col-6 d-flex p-2 flex-column text-center bg-body rounded">
+                <h2>¡Ideas para tu pagina!</h2>
+                <h3>Aceptamos sugerencias</h3>
+            </div>
+        </div>
+        <div class="row m-4 d-flex justify-content-center">
+            <div class="col-6 d-flex p-2 flex-column text-center bg-body rounded p-3">
+                <p>Esta página ya cuenta con muchas ideas para nombres de dominio, pero siempre es bueno añadir ideas nuevas
+                :)
+                a continuación algunas sugerencias:</p>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-auto d-flex flex-column text-center">
+                        <button type="button" class="btn btn-primary" id="loopBtn">
+                            Púlsame
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <!-- Página 2  -->
+    <div id="page_2" class="d-none">
+        <div class="row m-2 d-flex justify-content-center vh-100 align-items-center">
+            <div class="col-7 d-flex flex-column py-3 align-items-center text-center bg-body rounded ">
+                <h3>Ideas disponibles:</h3>
+                <textarea name="ideas" class="textArea" id="textArea" readonly></textarea>
+                <div class="d-flex gap-2">
+                    <button type="button" name="" id="moreBtn" class="mt-2 btn btn-primary">
+                        Más ideas
+                    </button>
+                    <button type="button" name="" id="viewAllBtn" class="mt-2 btn btn-primary">
+                        Ver todo
+                    </button>
+                </div>
+            </div>
+            <div class="col-8 d-flex p-2 flex-column align-items-center text-center bg-body rounded ">
+                <p>¿Alguna sugerencia?</p>
+                <div class="d-grid gap-2">
+                    <button type="button" name="" id="sugBtn" class="btn btn-primary">
+                        ¡Tengo una idea!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Página 3 -->
+    <div id="page_3" class="d-none">
+        <div class="row m-2 d-flex justify-content-center vh-100 align-items-center">
+            <form id="formSug" class="col-7 d-flex flex-column p-3 align-items-center bg-body rounded ">
+                <h3>Sugerencia</h3>
+                <input type="formcheck text" name="sug" id="suggestion" class="form-control" placeholder="Tu idea aquí"
+                    required>
+                <div class="d-flex w-100 gap-2 p-2">
+                    <button type="submit" id="submitBtn" class="btn btn-primary">
+                        Sugerir
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- página_4 -->
+    <div id="page_4" class="d-none">
+        <div class="row m-2 d-flex justify-content-center vh-100 align-items-center">
+            <div class="col-7 d-flex flex-column p-3 align-items-center bg-body rounded ">
+                <h3 class="mb-3">¡Sugerencia enviada!</h3>
+                <div id="r-1" class="d-none">
+                    <img src=" https://media.tenor.com/5qHvGMx9eJMAAAAC/throwing-papers-im-done.gif" class="img-fluid">
+                    <p class="pt-3">Entre tantas que hay, tal vez algún dia nuestro desarrollador sin sueldo se digna a
+                        revisarla. ¡Suerte!</p>
+                </div>
+                <div id="r-2" class="d-none">
+                    <img src="https://media.tenor.com/yltb9g8c9yoAAAAd/frusterated-overwhelmed.gif" class="img-fluid">
+                    <p class="pt-3">Nuestro desarrollador se ha cansado de revisar sugerencias absurdas. ¡Pero, hey! Tal
+                        vez mañana la lea :)</p>
+                </div>
+                <div id="r-3" class="d-none">
+                    <img src="https://media.tenor.com/4RJPuJgfA1EAAAAd/paperwork-cat.gif" class="img-fluid">
+                    <p class="pt-3">Nuestro desarrollador desapareció y dejo al gato Santiago en su lugar. Mirará tu
+                        sugerencia en la brevedad posible.
+                    </p>
+                </div>
+                <div id="r-4" class="d-none">
+                    <img src="https://media.tenor.com/FST_e0IU7lgAAAAC/stressed-angry.gif" class="img-fluid">
+                    <p class="pt-3">Nuestro desarrollador ha llegado a su límite, tantas sugerencias surreales rompen la
+                        mente de cualquiera.</p>
+                </div>
+                <div id="r-5" class="d-none">
+                    <img src="https://media.tenor.com/PpwKCIfDPNMAAAAd/throwing-paper-throwing-bill.gif"
+                        class="img-fluid">
+                    <p class="pt-3">Directamente voy a descartar esta estupidez. <br><br> Att: El desarrollador sin
+                        sueldo. </p>
+                </div>
+                <div id="r-6" class="d-none">
+                    <img src=" https://media.tenor.com/BIlB4Ih1XpwAAAAC/%D1%87%D0%B5%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F%D0%B1%D1%83%D0%BC%D0%B0%D0%B3%D0%B0-%D0%BC%D0%B5%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%D0%B1%D1%83%D0%BC%D0%B0%D0%B3%D0%B0.gif"
+                        class="img-fluid">
+                    <p class="pt-3">Puras mamadas llegan a esta sitio, increible. ¡Por eso nuestro desarrollador sin
+                        sueldo se fue!</p>
+                </div>
+                <div class="d-grid gap-2 d-flex">
+                    <button type="button" name="" id="otherSuggBtn" class="btn btn-primary">
+                        Volver
+                    </button>
+                    <button type="button" name="" id="reStartBtn" class="btn btn-primary">
+                        Inicio
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- página 5 -->
+     <!-- La hago por si acaso sientes que no cumplo con la tarea que se pidio xd.
+     Aunque en esencia la logica esta hecha... -->
+<div id="page_5" class="d-none">
+        <div class="row m-5  justify-content-center rounded">
+            <div class="col-6 d-flex bg-white p-3 flex-column align-items-center bg-body rounded ">
+                <textarea name="All" class="showAll rounded" id="showAll" readonly></textarea>
+                <div class="row m-4 d-flex justify-content-center">
+                    <div class="col-auto d-flex pt-2  flex-column text-center">
+                        <button type="button" class="btn btn-primary" id="bckToPg2">
+                            volver
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+    <script src="/08_Doms_Generator/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

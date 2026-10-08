@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark"
+    style="--bs-body-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+
+
+
+    <div class="container bg-white min-vh-100 px-4 shadow" style="max-width: 650px;">
+        <nav class="navbar navbar-light bg-white sticky-top py-2">
+            <div class="container d-flex justify-content-between align-items-center">
+                <span class="navbar-brand fw-bold mb-0"><i class="fa-brands fa-instagram"></i> Instagram</span>
+
+
+                <div class="d-flex gap-3">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#newPostModal">New post</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#Wall">Configuración</a>
+                            </li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#Wall">Privacidad</a>
+                            </li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#Wall">Datos</a></li>
+                            <li>
+                                <hr class="dropdown-divider my-1">
+                            </li>
+                            <li><a class="dropdown-item btn text-danger" data-bs-toggle="modal"
+                                    data-bs-target="#Wall">Datos</a></li>>Cerrar sesión </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="row py-4 border-bottom">
+            <div class="col-4 d-flex justify-content-center align-items-center">
+                <img src="Profile_img_4.jpg" class="rounded-circle"
+                    style="width:150px; height:150px; object-fit: cover;">
+            </div>
+            <div class="col-8">
+                <div class="d-flex gap-4 mb-3">
+                    <div><span class="fw-bold">9</span></span> publicaciones</div>
+                    <div><span class="fw-bold">1.5k</span> seguidores</div>
+                    <div><span class="fw-bold">200</span> seguidos</div>
+                </div>
+                <h2 class="fw-bold mb-0">Arturo Alejandro</h2>
+                <p class="text-secondary mb-0">Un perfil de instagram hecho con bootstrap 5. haciendo pruebas de código
+                    paso a paso. Se nota que es fake porque no estoy ni cerca de tener tantos seguidores jajaj.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center border-bottom mb-4">
+            <ul class="nav nav-tabs border-0 justify-content-center" id="feedButtons" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link shadow-none active border-0" id="quadView" data-bs-toggle="tab"
+                        data-bs-target="#grid-view" type="button" role="tab" aria-controls="list-view"
+                        aria-selected="false">
+                        <i class="fa-solid fa-border-all"></i>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link border-0 shadow-none" id="listView" data-bs-toggle="tab"
+                        data-bs-target="#list-view" type="button">
+                        <i class="fa-regular fa-square"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="tab-content" id="instagramTabContent">
+
+            <div class="tab-pane show active" id="grid-view" role="tablist">
+                <div class="row g-3">
+
+                    <div class="col-4">
+                        <div class="ratio ratio-1x1 my-2">
+                            <img src="imgs\IMG_20260530_182743.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                data-bs-toggle="modal" data-bs-target="#postModal1" style="object-fit: cover;">
+                        </div>
+                        <div class="ratio ratio-1x1 my-2">
+                            <img src="imgs\IMG-20260529-WA0119.jpg" class="img-fluid w-100 h-100 ratio ratio-1x1"
+                                data-bs-toggle="modal" data-bs-target="#postModal4"
+                                style="object-fit: cover;  object-position: top;">
+                        </div>
+                        <div class="ratio ratio-1x1 my-2">
+                            <img src="imgs\IMG_20260516_165226.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                data-bs-toggle="modal" data-bs-target="#postModal7" style="object-fit: cover;">
+                        </div>
+                    </div>
+
+
+                    <div class="col-4">
+                        <div class="ratio ratio-1x1 my-2">
+                            <img src="imgs\IMG-20260520-WA0381 (1).jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                data-bs-toggle="modal" data-bs-target="#postModal2" style="object-fit: cover;">
+                        </div>
+                        <div class="ratio ratio-1x1 my-2">
+                            <img src="imgs\IMG_20260526_202221.jpg" class="img-fluid w-100 h-100 ratio ratio-1x1"
+                                data-bs-toggle="modal" data-bs-target="#postModal5"
+                                style="object-fit: cover;  object-position: top;">
+                        </div>
+                        <div class="ratio ratio-1x1 my-2">
+                            <img src="imgs\IMG_20260526_211335.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                data-bs-toggle="modal" data-bs-target="#postModal8" style="object-fit: cover;">
+                        </div>
+                    </div>
+
+
+                    <div class="col-4">
+                        <div class="ratio ratio-1x1 my-2">
+                            <img src="imgs\PXL_20260526_133032974.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                data-bs-toggle="modal" data-bs-target="#postModal3" style="object-fit: cover;">
+                        </div>
+                        <div class="ratio ratio-1x1 my-2">
+                            <img src="imgs\IMG_20260516_224046 (1).jpg" class="img-fluid w-100 h-100 ratio ratio-1x1"
+                                data-bs-toggle="modal" data-bs-target="#postModal6"
+                                style="object-fit: cover;  object-position: top;">
+                        </div>
+                        <div class="ratio ratio-1x1 my-2">
+                            <img src="imgs\IMG-20260531-WA0052.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                data-bs-toggle="modal" data-bs-target="#postModal9" style="object-fit: cover;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade fade" id="list-view" role="tabpanel">
+
+                <div class="d-flex justify-content-center pt-0 my-3">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG_20260530_182743.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> No hay chamba
+                                    en la chamba.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center pt-0 my-3">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG-20260520-WA0381 (1).jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Una preciosa bien
+                                    doctora.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center pt-0 my-3">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\PXL_20260526_133032974.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Nos vamos yendo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center pt-0 my-3">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG-20260529-WA0119.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;  object-position: top;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Una preciosa en el
+                                    gimnasio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center pt-0 my-3">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG_20260526_202221.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Otra foto sin chamba
+                                    en la chamba.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center pt-0 my-3">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG_20260516_224046 (1).jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Rawayaneando ando.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center pt-0 my-3">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG_20260516_165226.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Por una vez al año que
+                                    salga de mi casa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center pt-0 my-3">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG_20260526_211335.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Un atardecer bonito.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center pt-0 my-3">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG-20260531-WA0052.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Una preciosa y sus
+                                    lentes nuevos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+    </div>
+
+    </div>
+
+
+    </div>
+    </div>
+
+
+
+    <div class="modal fade" tabindex="-1" id="newPostModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nueva publicación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="postText" class="form-label fw-bold small text-secondary">¿Qué estás pensando?</label>
+                    <textarea class="form-control shadow-none" id="postText" rows="3"
+                        placeholder="Pie de foto aqui..."></textarea>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn btn-light btn-sm border my-1 text-dark shadow-none">
+                            <i class="fa-solid fa-camera me-1"></i>Foto/Video
+                        </button>
+                        <button type="button" class="btn btn-light my-1 btn-sm border text-dark shadow-none">
+                            <i class="fa-solid fa-file"></i> Archivo
+                        </button>
+                        <button type="button" class="btn btn-light my-1 btn-sm border text-dark shadow-none">
+                            <i class="fa-solid fa-location-dot"></i> Ubicación
+                        </button>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atrás</button>
+                    <button type="button" class="btn btn-primary">Publicar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="Wall">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¿Pa' donde vas?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>No hay nada que hacer aqui, bro... es una pagina fake para 4Geeks</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="postModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG_20260530_182743.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> No hay chamba
+                                    en la chamba.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="postModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG-20260520-WA0381 (1).jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Una preciosa bien
+                                    doctora.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="postModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\PXL_20260526_133032974.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Nos vamos yendo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="postModal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG-20260529-WA0119.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;  object-position: top;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Una preciosa en el
+                                    gimnasio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="postModal5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG_20260526_202221.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Otra foto sin chamba
+                                    en la chamba.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="postModal6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG_20260516_224046 (1).jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Rawayaneando ando.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="postModal7" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG_20260516_165226.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Por una vez al año que
+                                    salga de mi casa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="postModal8" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG_20260526_211335.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Un atardecer bonito.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="postModal9" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="card w-100" style="max-width: 615px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-2 px-3">
+                            <div>
+                                <img src="Profile_img_4.jpg" class="rounded-circle"
+                                    style="width:50px; height:50px; object-fit: cover;">
+                                <span class="fw-bold small">ArthReiss</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                        </div>
+                        <div class="g-1">
+                            <div class="ratio ratio-1x1">
+                                <img src="imgs\IMG-20260531-WA0052.jpg" class="img-fluid w-100 ratio ratio-1x1"
+                                    style="object-fit: cover;">
+                            </div>
+                            <div class="d-flex align-items-between mx-2 fs-4">
+                                <div class="d-flex gap-3 align-items-between mx-2 fs-4">
+                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div><i class="fa-regular fa-comment"></i></div>
+                                    <div><i class="fa-solid fa-retweet"></i></div>
+                                </div>
+                                <div class="ms-auto mx-2"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <p class="mb-0 small"><span class="fw-bold me-1">ArthReiss</span> Una preciosa y sus
+                                    lentes nuevos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+body {
+  background-image: url("https://img.magnific.com/vector-gratis/juego-azar-casino-patron-tarjeta-as-bandera-ganar-gran-premio_1017-49718.jpg?semt=ais_hybrid&w=740&q=80");
+}
+#naipe {
+    width: 200px;
+    height: 300px;
+    transform-origin: top center;
+ }
+
+.symbol {
+    color: black;
+    font-size: 30px;
+}
+.font-naipe{
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+}
+#BJnaipe, #faceDownCard, #pageOnGame {
+    width: 200px;
+    height: 300px;
+}
+.font-BJnaipe{
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+}
+.cardFooterSymb {
+    display: inline-block;
+  transform: rotate(180deg);
+}

@@ -1,0 +1,25 @@
+/* * {
+    border: red 1px dashed
+} */
+
+body {
+    background-image: url('https://w0.peakpx.com/wallpaper/492/652/HD-wallpaper-lines-of-html-codes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 600px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#textArea {
+    height: 250px;
+    width: 250px;
+}
+.textArea, .showAll{
+    border: none;
+}
+#showAll {
+ height: 500px;
+ width: 250px;
+}

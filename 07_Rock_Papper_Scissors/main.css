@@ -1,0 +1,56 @@
+/* * {
+    border: red 1px dashed
+} */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("src/img/WallPapper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+}
+.opcionPlayer {
+    height: 200px;
+    border-radius: 5px;
+    display: block;
+    background: none;
+    border: none
+}
+.opcionPlayerImg {
+    height: 200px;
+    border-radius: 5px;
+    display: block;
+    background: none;
+    border: none
+}
+.toPlay {
+    height: 300px;
+    border-radius: 5px;
+    display: block;
+    background: none;
+    border: none
+}
+.opcionPlayer:hover {
+    transform: scale(1.02);
+    filter: brightness(0.8); 
+}
+.toPlay:hover {
+    transform: scale(1.02);
+    filter: brightness(0.8); 
+}
+.toPlay:hover {
+    transform: scale(1.0);
+}
+.opcionPlayer:active {
+    transform: scale(1.0);
+}
+.pantalla_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+}
+#textoResultado {
+    font-size: 30px;
+}
